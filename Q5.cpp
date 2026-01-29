@@ -39,4 +39,19 @@ int main()
 
     std::swap(a,b)
 
+    or
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    or 
+
+
+    a = a * b;
+    b = a / b;
+    a = a / b;
+
+    
+
 */
