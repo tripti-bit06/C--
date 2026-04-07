@@ -1,0 +1,1 @@
+/* WAPtoadd2 numbers by using all the types of function we have just discussed*/

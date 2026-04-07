@@ -14,7 +14,7 @@ private:
     int a, b;
 
 public:
-    void getData()
+    void Data()
     {
         cout << "Enter a no. in a : ";
         cin >> a;
@@ -38,7 +38,7 @@ public:
 int main()
 {
     Swap obj;
-    obj.getData();
+    obj.Data();
     obj.calculate();
     obj.display();
 

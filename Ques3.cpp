@@ -8,6 +8,7 @@ class Temp
 private:
     float cel, freh;
 
+
 public:
     void getData()
     {
