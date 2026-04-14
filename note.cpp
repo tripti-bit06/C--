@@ -121,4 +121,42 @@ PARAMETERIZED CONSTRUCTORS IN INHERITANCE
 */
 
 // private data is private to that particular class it cannot be used by inherited class or outside the class(main function) 
-// Protected data lies b/w private & public which means it can be accessed by inherited class but it cannot be accessd outside the class (main function)
+// Protected data lies b/w private & public which means it can be accessed by inherited class but it cannot be accessd 
+// outside the class (main function)
+
+//------------------------- Multiple Inheritance --------------------------
+
+//protected data members and member functions are accessible to derived classes but inaccessible to main function 
+// while public data members and meme functions are accessible to derived classe,all other classes(which are not derived and
+//to the main function also but to access the public data we always need an object,private data is inaccesible to any class)
+
+/*                                Modes of inheritance :
+
+BASE CLASS              PUBLIC                   PROTECTED                        PRIVATE 
+MEMBERS:                INHERITANCE:             INHERITANCE:                     INHERITANCE:
+
+PUBLIC                  PUBLIC                   PROTECTED                        PRIVATE
+
+PROTECTED               PROTECTED                PROTECTED                        PRIVATE
+
+PRIVATE                 NA                       NA                               NA
+
+
+
+*/  
+
+
+
+// Acces specifier : Private , Protected , public
+
+// When we are deriving a classs in private mode , all the Private ,
+// protected & public data becomes the private data of derived class 
+
+/*  
+
+when the child clss recieves the super base class properties via two parents,
+so the child class gets the extra copy of super base class data members and memeber
+functiomns,in this case we will be using virtua innheritance, which means when we 
+are going to apply virtual keyword before the class so that my child classs recives 
+only one copy of superbase class data members and member functions.
+*/
