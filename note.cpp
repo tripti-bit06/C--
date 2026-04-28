@@ -223,3 +223,41 @@ int main(){
 
 
         // Whenever we return an object return type should be class name or vive versa. 
+
+
+        // FILE HANDLING deals with reading & writing prompts from different files such as 
+        // a text file , a phyton (any kind of file)
+
+        // ------------------ MODES OF FILE ------------------------
+        /*  
+    
+ios :: out = writing to a file (default mode for iostream)
+
+ios::in reading from a file (default mode for ifstream)
+
+Ios::app oppend the data into file
+
+ios::trune = Erase the data from file if it exists.
+
+ios::binas binary: 2 works with binary file      */
+
+/* Exception handling in c++ 
+Compie time are those time of error which may come during compile time &
+mostly they are syntacial error  may arrive due to the wrong syntax such
+as missing semicolon & speller mistake int logic wrriten by the developer 
+for ex: divisio by 0, array index out of bounds (suppose the size of
+array is 4 and we are trying to excess the 5 element)
+
+when an exception exist it abtrubly terminate the program,if we haven't
+written any mechansm to handle the exeption . we handle the exception by
+using s words they throw & catch
+
+We place the code which might thrown an eceptionin try block, throw keyword 
+is used to throw the exception & catch block & to catch the exception thrown
+by throw keyword
+
+*/
+
+/* multiple catch box in exeption handling 
+we can have multiple catch box for single that statement mostly we use only one tristatement
+*/
