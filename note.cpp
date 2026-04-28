@@ -159,4 +159,67 @@ so the child class gets the extra copy of super base class data members and meme
 functiomns,in this case we will be using virtua innheritance, which means when we 
 are going to apply virtual keyword before the class so that my child classs recives 
 only one copy of superbase class data members and member functions.
+
 */
+
+/*    ------------------ Friend function --------------------
+
+Friend function is used to acess the pvt & protected data of a class ,
+   as we knoe that the pvt data of our class cannot be acessed by members
+   which are present , but there can be certain circumstances where we
+   need to acess the pvt data in that case we make use of a friend function 
+
+A FRIEND FUCTION DOES NOT BELONG TO ANY OF THE CLASS ( NOT IN THE SCOPE OF ANY CLASS).
+
+SINCE IT IS NOT IN THE SCOPE OF ANY CLASSS , SO IT CANNOT BE CALLED 
+BY USING THE OBJECT OF ANY CLASS.  IT IS CALLED LIKE A NORMAL FUNCTION.
+
+WE HAVE TO DECLARE ALL THE CLASSESWHICH ARE USING THE FRIEND FUNCTION AND HIS IS KNOWN AS FORWARD DECLARATION
+
+class xyz;
+class abc{
+    int num1;
+    public:
+    abc(int x){
+        num1 = x;
+    }
+    friend void add(abc,xyz);
+};
+class xyz{
+    int num2;
+    public:
+    xyz(int y){
+        num2 = y;
+    }
+    friend void add(abc,xyz);
+};
+void add (abc a1,xyz x1){
+    int sum;
+    sum = a1.num1 + x1.num2;
+    cout<<sum;
+}
+int main(){
+    abc a1(10);
+    xyz x1(20);
+    add(a1,x1);
+}
+    */
+
+    /*  ---------------------- OPERATOR OVERLOADING ---------------------------
+        OPERATOR OVERLOADING MEANS WE CAN MAKE THE SAME OF THE OPERATOR DO DIFFERENT FUNCTION 
+        FOR EX  + OPERATOR CAN ADD ARTHEMATIC NUMBERS AND IT VAN CONCATONATE TO STRINGS AND
+        IT CAN ADD TWO OBJ ALSO
+
+        * IS USED FOR DECLARING POINTER VARIABLE AND ALSO USED AS DEREFRACING OPERATOR 
+        SUM OF THE OPERATOR SUCH AS NEW DLT , SCOPE RESOLUTING OPERATOR 
+        */
+
+        // WAP to add theobj using operator overloading 
+
+       /* This is default argument , when we will not pass any variable 
+        as an argument in obj creation it will take no. will be initialize
+        to zero by default */
+  
+
+
+        // Whenever we return an object return type should be class name or vive versa. 
